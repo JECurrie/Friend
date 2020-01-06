@@ -1,11 +1,3 @@
 def friend(friends)
-	output = []
-  friends.each {|str|
-  	if str[3] == str[-1]
-  		output << str
-  	end
-  }
-  output	
+  friends.select { |name| name.length == 4 }
 end
-
-friend(["Ryan", "Kieran", "Mark"])
